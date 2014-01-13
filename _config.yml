@@ -1,16 +1,8 @@
 markdown: rdiscount
-permalink: /:title/
-url: xlagrange.github.io
 name: 随便说说
 author: 咪崽
-qq:
 email: xi.lagrange@gmail.com
-duoshuo: 
-beian:
-cnzz:
-weibo:
-github:
 pygments: true
 safe: true
 paginate: 20
-about: 
+about: "关于, 一会儿来写" 
