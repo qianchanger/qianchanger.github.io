@@ -1,5 +1,4 @@
 {% if site.duoshuo %}
-	{% if page.thread %}
 	<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-excerpt-length="70"></ul>
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
