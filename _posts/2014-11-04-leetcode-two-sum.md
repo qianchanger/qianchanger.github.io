@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->Given an array of integers, find two numbers such that they add up to a specific target number.
+题目连接点击:[这里](https://oj.leetcode.com/problems/two-sum/)
 
 {% highlight cpp %}
 vector<int> twoSum(vector<int> &numbers, int target) {
@@ -33,6 +33,29 @@ vector<int> twoSum(vector<int> &numbers, int target) {
             r--;
         }
     }
+}
+{% endhighlight %}
+
+---
+
+再看看自己的code 发现最后的线性查找会花很多时间 不如这个代码简洁高效
+{% highlight cpp %}
+vector<int> twoSum(vector<int> &numbers, int target)
+{
+    unordered_map<int, int> loc;
+    for (int i = 0; i < numbers.size(); ++i) {
+        loc[numbers[i]] = i;
+    }
+    vector<int> ret;
+    for (int i = 0; i < numbers.size(); ++i) {
+        int v = target - numbers[i];
+        if (loc.count(v) && loc[v] != i) {
+            ret.push_back(i + 1);
+            ret.push_back(loc[v] + 1);
+            break;
+        }
+    }
+    return ret;
 }
 {% endhighlight %}
 
