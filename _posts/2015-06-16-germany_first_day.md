@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#小砸旅德日志#到达德国的第一天"
+title: "到达 德国"
 categories: #旅居德国 生活点滴#
 tags: 心情
 ---
