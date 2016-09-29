@@ -1,5 +1,4 @@
 # 自定义
-# markdown: rdiscount
 name: 随便说说
 author: 咪崽
 email: xi.lagrange@gmail.com
@@ -36,7 +35,7 @@ whitelist: []
 gems:      [jekyll-paginate]
 
 # 转换
-markdown:    kramdown
+markdown:    rdiscount # kramdown
 highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
