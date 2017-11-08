@@ -8,6 +8,7 @@ tags: leetcode
 
 题目连接点击:[这里](https://oj.leetcode.com/problems/largest-number/)
 
+<!--more-->
 {% highlight cpp %}
 static bool compfunc(const string &s1, const string &s2)
 {

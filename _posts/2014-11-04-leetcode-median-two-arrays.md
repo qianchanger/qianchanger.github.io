@@ -8,6 +8,7 @@ tags: leetcode
 
 >There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 
+<!--more-->
 {% highlight cpp %}
 double findMedianSortedArrays(int A[], int m, int B[], int n) {
     if (m < n)

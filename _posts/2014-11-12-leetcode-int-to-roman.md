@@ -9,6 +9,7 @@ tags: leetcode
 >Given an integer, convert it to a roman numeral.
 >Input is guaranteed to be within the range from 1 to 3999.
 
+<!--more-->
 {% highlight cpp %}
 string intToRoman(int num) {
     char sym[7] = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};

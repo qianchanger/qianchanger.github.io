@@ -8,6 +8,7 @@ tags: leetcode
 
 >Given a digit string, return all possible letter combinations that the number could represent.
 
+<!--more-->
 {% highlight cpp %}
 vector<string> letterCombinations(string digits) {
     map<char, string> table;

@@ -8,6 +8,7 @@ tags: leetcode
 
 >Determine whether an integer is a palindrome. Do this without extra space.
 
+<!--more-->
 {% highlight python %}
 def isPalindrome(self, x):
     s = str(x)

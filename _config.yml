@@ -1,79 +1,78 @@
-# 自定义
-name: 随便说说
-author: 咪崽
-email: xi.lagrange@gmail.com
-weibo: 1840382030
-github: XLagrange
-duoshuo: xlagrange
-paginate: 20
-about: ""
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# 目录结构
-source:      .
-destination: ./_site
-plugins_dir:     ./_plugins
-layouts_dir:     ./_layouts
-data_dir: ./_data
-collections: null
+## Base settings ##
+# url:  # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl: ''
+title: 随便说哈
+description: > #this means to ignore newlines until "nav_lists:"
+  咪崽的博客
 
-# 阅读处理
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+nav_lists:
+  - title: About
+    url: /about.html
 
-# 内容过滤
-show_drafts: null
-limit_posts: 0
-future:      true
-unpublished: false
+## GitHub repository (if the site is hosted by GitHub) ##
+repository: xlagrange.github.io
+repository_tree: master
 
-# 插件
-whitelist: []
-gems:      [jekyll-paginate]
+## Language & timezone ##
+lang: zh #the language of your site
+timezone: America/Toronto
 
-# 转换
-markdown:    rdiscount # kramdown
+## Author & social ##
+author:
+  name: 咪崽
+  # email:  #your Email address e.g. someone@site.com
+  # facebook:  #your Facebook username
+  # twitter:  #your Twitter username
+  # github:  #your GitHub username
+  # googleplus:  #your Google+ username
+  # weibo:  #your Weibo username
+  douban: lagrangeisright
+  # linkedin:  #your Linkedin username
+
+## Comment system (Disqus) ##
+disqus:
+  # shortname:  #the Disqus shortname for the site
+
+## Google Analytics ##
+# ga_tracking_id:  #Google analytics id for the site
+
+## Reading quantity (LeanCloud) ##
+leancloud:
+  # app_id:  #LeanCloud App id
+  # app_key:  #LeanCloud App key
+  # app_class:  #LeanCloud App class
+
+# mathjax: true
+
+## Paginate ##
+paginate: 5
+paginate_path: /blog/page:num
+
+## Post excerpts ##
+excerpt_type: html
+excerpt_separator: <!--more-->
+
+## Build ##
+markdown: kramdown
 highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
+permalink: date
 
-# 服务器选项
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
+## Plugins ##
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jemoji
 
-# 输出
-permalink:     date
-paginate_path: /page:num
-timezone:      null
+## Server ##
+server_url: "0.0.0.0"
 
-quiet:    false
-defaults: []
-
-# Markdown 处理器
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+## Development ##
+isdebug: false

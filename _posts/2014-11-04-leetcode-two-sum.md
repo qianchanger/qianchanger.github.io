@@ -8,6 +8,7 @@ tags: leetcode
 
 题目连接点击:[这里](https://oj.leetcode.com/problems/two-sum/)
 
+<!--more-->
 {% highlight cpp %}
 vector<int> twoSum(vector<int> &numbers, int target) {
     vector<int> numbers_bk(numbers);

@@ -8,6 +8,7 @@ tags: leetcode
 
 题目连接点击:[这里](https://oj.leetcode.com/problems/maximum-product-subarray/)
 
+<!--more-->
 {% highlight cpp %}
 int maxProduct(int A[], int n) {
     vector<int> array(n, 0);

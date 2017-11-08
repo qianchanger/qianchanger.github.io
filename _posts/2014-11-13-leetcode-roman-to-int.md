@@ -8,6 +8,7 @@ tags: leetcode
 
 >Given a roman numeral, convert it to an integer.
 
+<!--more-->
 {% highlight python %}
 def romanToInt(self, s):
     table = {

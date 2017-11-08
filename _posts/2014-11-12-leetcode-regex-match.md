@@ -8,6 +8,7 @@ tags: leetcode
 
 >Implement regular expression matching with support for '.' and '*'.
 
+<!--more-->
 {% highlight cpp %}
 bool isMatch(const char *s, const char *p) {
     string s_str(s);

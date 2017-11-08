@@ -8,6 +8,7 @@ tags: leetcode
 
 >Implement atoi to convert a string to an integer.
 
+<!--more-->
 {% highlight cpp %}
 int atoi(const char *str) {
     if (!str) {

@@ -9,6 +9,7 @@ tags: leetcode
 >The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 >And then read line by line: "PAHNAPLSIIGYIR"
 
+<!--more-->
 {% highlight cpp %}
 string convert(string s, int nRows) {
     if (nRows == 1) {
