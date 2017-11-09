@@ -6,12 +6,12 @@ categories: code
 tags: leetcode
 ---
 
->Given a digit string, return all possible letter combinations that the number could represent.
+Given a digit string, return all possible letter combinations that the number could represent.
 
 <!--more-->
 {% highlight cpp %}
-vector<string> letterCombinations(string digits) {
-    map<char, string> table;
+tor<string> letterCombinations(string digits) {
+ map<char, string> table;
     table['1'] = "";
     table['2'] = "abc";
     table['3'] = "def";
@@ -22,14 +22,14 @@ vector<string> letterCombinations(string digits) {
     table['8'] = "tuv";
     table['9'] = "wxyz";
 
-    vector<string> ret;
+ vector<string> ret;
     letterCombinations(ret, table, digits, "", 0);
     return ret;
 }
 
-void letterCombinations(vector<string> &ret, const map<char, string> &table,
+d letterCombinations(vector<string> &ret, const map<char, string> &table,
                         const string &digits, string cur_str, const int cur_pos) {
-    if (cur_pos >= digits.size()) {
+   if (cur_pos >= digits.size()) {
         ret.push_back(cur_str);
         return;
     }

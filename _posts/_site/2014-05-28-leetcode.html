@@ -1,9 +1,11 @@
-<p>#Rotate List
-&gt;Given a list, rotate the list to the right by k places, where k is non-negative. <br />
-&gt;For example: <br />
+<h1 id="rotate-list">Rotate List</h1>
+<blockquote>
+  <p>Given a list, rotate the list to the right by k places, where k is non-negative. <br />
+For example: <br />
 <!--more-->
-&gt;Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL and k = 2, <br />
-&gt;return 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL.</p>
+Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL and k = 2, <br />
+return 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL.</p>
+</blockquote>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">ListNode</span> <span class="o">*</span><span class="nf">rotateRight</span><span class="p">(</span><span class="n">ListNode</span> <span class="o">*</span><span class="n">head</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">((</span><span class="n">head</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span> <span class="p">{</span>

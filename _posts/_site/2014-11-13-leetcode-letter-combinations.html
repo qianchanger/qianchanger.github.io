@@ -2,8 +2,9 @@
   <p>Given a digit string, return all possible letter combinations that the number could represent.</p>
 </blockquote>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="o">&lt;!--</span><span class="n">more</span><span class="o">--&gt;</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">letterCombinations</span><span class="p">(</span><span class="n">string</span> <span class="n">digits</span><span class="p">)</span> <span class="p">{</span>
+<!--more-->
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">letterCombinations</span><span class="p">(</span><span class="n">string</span> <span class="n">digits</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">map</span><span class="o">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span> <span class="n">table</span><span class="p">;</span>
     <span class="n">table</span><span class="p">[</span><span class="sc">'1'</span><span class="p">]</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
     <span class="n">table</span><span class="p">[</span><span class="sc">'2'</span><span class="p">]</span> <span class="o">=</span> <span class="s">"abc"</span><span class="p">;</span>
@@ -33,3 +34,4 @@
         <span class="n">letterCombinations</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">digits</span><span class="p">,</span> <span class="n">cur_str</span><span class="o">+</span><span class="n">candidates</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">cur_pos</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
+

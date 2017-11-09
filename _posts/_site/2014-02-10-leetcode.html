@@ -1,10 +1,12 @@
-<p>#Search a 2D Matrix 
-&gt;binary search一项都是自己的弱项 <br />
-&gt;while的条件到底是 ‘&lt;’ 还是 ‘&lt;=’ <br />
+<h1 id="search-a-2d-matrix">Search a 2D Matrix</h1>
+<blockquote>
+  <p>binary search一项都是自己的弱项 <br />
+while的条件到底是 ‘&lt;’ 还是 ‘&lt;=’ <br />
 <!--more-->
-&gt;左右值的改变到底要不要+1或-1 <br />
-&gt;所以很多时候只有死记硬背下来 <br />
-&gt;默默等待融会贯通豁然开朗的那一天</p>
+左右值的改变到底要不要+1或-1 <br />
+所以很多时候只有死记硬背下来 <br />
+默默等待融会贯通豁然开朗的那一天</p>
+</blockquote>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">bool</span> <span class="nf">searchMatrix</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">matrix</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">((</span><span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">target</span> <span class="o">||</span> 

@@ -18,29 +18,29 @@ start = "hit"
 end = "cog"   
 dict = ["hot","dot","dog","lot","log"]   
 Return
->  [
->    ["hit","hot","dot","dog","cog"],
->    ["hit","hot","lot","log","cog"]
->  ]
+ [
+   ["hit","hot","dot","dog","cog"],
+   ["hit","hot","lot","log","cog"]
+ ]
 
 {% highlight cpp %}
-vector<vector<string>> findLadders(string start, 
+tor<vector<string>> findLadders(string start, 
                                    string end, 
-                                   unordered_set<string> &dict
+                                unordered_set<string> &dict
 ) {
-    vector<vector<string> > ret;
-    vector<string> path;
+ vector<vector<string> > ret;
+ vector<string> path;
     dict.erase(start);
     path.push_back(start);
     find_ladder(ret, path, start, end, dict);
     return ret;
 }
 
-void find_ladder(vector<vector<string> > &ret, 
-                 vector<string> &path, 
+d find_ladder(vector<vector<string> > &ret, 
+              vector<string> &path, 
                  string &cur_word,
                  const string &end,
-                 unordered_set<string> &dict
+              unordered_set<string> &dict
 ) {
     if (cur_word == end) {
         if (ret.empty() || path.size() < ret[0].size()) {

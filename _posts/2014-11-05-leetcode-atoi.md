@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->Implement atoi to convert a string to an integer.
+Implement atoi to convert a string to an integer.
 
 <!--more-->
 {% highlight cpp %}
@@ -34,7 +34,7 @@ int atoi(const char *str) {
     int ret = 0;
     while (str != NULL) {
         int val = (*str) - '0';
-        if (val < 0 || val > 9) {
+     if (val < 0 || val > 9) {
             return ret;
         }
         if (flag) {
@@ -43,7 +43,7 @@ int atoi(const char *str) {
             }
             ret = 10 * ret + val;
         } else {
-            if ((INT_MIN + val > ret*10) || (INT_MIN/10 > ret)) {
+         if ((INT_MIN + val > ret*10) || (INT_MIN/10 > ret)) {
                 return INT_MIN;
             }
             ret = 10 * ret - val;

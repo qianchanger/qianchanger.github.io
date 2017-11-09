@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->Implement regular expression matching with support for '.' and '*'.
+Implement regular expression matching with support for '.' and '*'.
 
 <!--more-->
 {% highlight cpp %}
@@ -14,9 +14,9 @@ bool isMatch(const char *s, const char *p) {
     string s_str(s);
     string p_str(p);
 
-    vector<vector<bool> > table(
+ vector<vector<bool> > table(
     	p_str.size()+1,
-    	vector<bool>(false, s_str.size()+1)
+   	vector<bool>(false, s_str.size()+1)
     );
 
     table[0][0] = true;

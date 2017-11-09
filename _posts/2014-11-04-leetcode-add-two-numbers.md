@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
 <!--more-->
 {% highlight cpp %}
@@ -21,39 +21,39 @@ ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     int carry = 0;
 
     while (l1 && l2) {
-        int sum = l1->val + l2->val + carry;
+       int sum = l1->val + l2->val + carry;
         carry = sum / 10;
         ListNode *node = new ListNode(sum % 10);
-        cur->next = node;
-        cur = cur->next;
-        l1 = l1->next;
-        l2 = l2->next;
+       cur->next = node;
+       cur = cur->next;
+       l1 = l1->next;
+       l2 = l2->next;
     }
 
     while (l1) {
-        int sum = l1->val + carry;
+       int sum = l1->val + carry;
         carry = sum / 10;
         ListNode *node = new ListNode(sum % 10);
-        cur->next = node;
-        cur = cur->next;
-        l1 = l1->next;
+       cur->next = node;
+       cur = cur->next;
+       l1 = l1->next;
     }
 
     while (l2) {
-        int sum = l2->val + carry;
+       int sum = l2->val + carry;
         carry = sum / 10;
         ListNode *node = new ListNode(sum % 10);
-        cur->next = node;
-        cur = cur->next;
-        l2 = l2->next;
+       cur->next = node;
+       cur = cur->next;
+       l2 = l2->next;
     }
 
     if (carry) {
         ListNode *node = new ListNode(carry);
-        cur->next = node;
+       cur->next = node;
     }
 
-    return head->next;
+   return head->next;
 }
 {% endhighlight %}
 

@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->Determine whether an integer is a palindrome. Do this without extra space.
+Determine whether an integer is a palindrome. Do this without extra space.
 
 <!--more-->
 {% highlight python %}
@@ -32,14 +32,14 @@ bool isPalindrome(int x) {
     }
 
     int count = 1;
-    while (x/pow(10, count-1) >= 10) {
+   while (x/pow(10, count-1) >= 10) {
         count++;
     }
 
     int l = count;
     int r = 1;
 
-    while (l > r) {
+ while (l > r) {
         int l_val = getNthDigit(x, l);
         int r_val = getNthDigit(x, r);
         if (l_val != r_val) {
@@ -61,4 +61,4 @@ int getNthDigit(const int x, const int n) {
 ---
 Python的解放是作弊了 使用了extra space
 
-需要注意的是x/pow(10, count-1) >= 10, 有等于这个case
+��要注意的是x/pow(10, count-1) >= 10, 有等于这个case

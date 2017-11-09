@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "再见 德国"
-categories: #旅居德国 生活点滴#
+categories: # 旅居德国 生活点滴#
 tags: 心情
 ---
 

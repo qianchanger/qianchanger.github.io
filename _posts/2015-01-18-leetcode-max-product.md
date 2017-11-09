@@ -11,12 +11,12 @@ tags: leetcode
 <!--more-->
 {% highlight cpp %}
 int maxProduct(int A[], int n) {
-    vector<int> array(n, 0);
+ vector<int> array(n, 0);
     array[0] = A[0];
     for (int i = 1; i < n; ++i) {
         int val = 1;
         array[i] = A[i];
-        for (int j = i; j >= 0; --j) {
+       for (int j = i; j >= 0; --j) {
             val *= array[j];
             array[i] = max(array[i], val);
         }

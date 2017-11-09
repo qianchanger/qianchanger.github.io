@@ -6,7 +6,7 @@ categories: code
 tags: leetcode
 ---
 
->Given a roman numeral, convert it to an integer.
+Given a roman numeral, convert it to an integer.
 
 <!--more-->
 {% highlight python %}
@@ -24,7 +24,7 @@ def romanToInt(self, s):
     ret = 0
 
     for i in xrange(len(s)):
-        if ((i>0) and (table[s[i]]>table[s[i-1]])):
+       if ((i>0) and (table[s[i]]>table[s[i-1]])):
             ret += table[s[i]] - 2 * table[s[i-1]]
         else:
             ret += table[s[i]]

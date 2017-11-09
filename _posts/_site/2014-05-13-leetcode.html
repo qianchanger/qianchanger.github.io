@@ -1,7 +1,9 @@
-<p>#Valid Parentheses
-&gt;Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[’ and ‘]’, determine if the input string is valid. <br />
-&gt;The brackets must close in the correct order, “()” and “()[]{}” are all valid but “(]” and “([)]” are not. <br />
+<h1 id="valid-parentheses">Valid Parentheses</h1>
+<blockquote>
+  <p>Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[’ and ‘]’, determine if the input string is valid. <br />
+The brackets must close in the correct order, “()” and “()[]{}” are all valid but “(]” and “([)]” are not. <br />
 <!--more--></p>
+</blockquote>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">bool</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">stack</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="n">c_stack</span><span class="p">;</span>
@@ -46,10 +48,12 @@
     <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>#Generate Parentheses
-&gt;Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. <br />
-&gt;For example, given n = 3, a solution set is: <br />
-&gt;”((()))”, “(()())”, “(())()”, “()(())”, “()()()”</p>
+<h1 id="generate-parentheses">Generate Parentheses</h1>
+<blockquote>
+  <p>Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. <br />
+For example, given n = 3, a solution set is: <br />
+“((()))”, “(()())”, “(())()”, “()(())”, “()()()”</p>
+</blockquote>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">generateParenthesis</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">ret</span><span class="p">;</span>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ending of Spring 2014"
-categories: #日记#
+categories: # 日记#
 tags: 心情
 ---
 
