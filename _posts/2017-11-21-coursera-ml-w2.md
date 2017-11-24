@@ -7,12 +7,26 @@ tags: coursera
 时隔4年 对于这门经典课程的内容已经淡忘 于是又复习一遍 在这里记下一些感受和领悟
 
 # Cost function 
-\\(J(\theta) = \frac{1}{m}\sum_{i=1}^m(h_\theta(X^i) - Y^i) \\)
+\\(J(\theta) = \frac{1}{2m}\sum_{i=1}^m(h_\theta(X^i) - Y^i) \\)
 其目的是找到一个theta的向量 去最小化\\(J(\theta)\\)
 
 怎么找到这个theta的向量呢? 有两个方法
 其一是normal equation 这是数学的方法
 第二是gradient descent 这是ML的方法
+
+<!--more-->
+
+
+# Gradient descent  
+Repeat {  
+    \\(\theta_j := \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta)\\)  
+}  
+
+求导之后 上面方程变为
+Repeat {  
+    \\(\theta_j := \theta_j - \frac{\alpha}{m}\sum_{i=1}^m(h_\theta(X^i) - Y^i)X_j^i\\)  
+}  
+
 
 # Normal Equation
 线性回归的方程 \\(h_\theta(X) = \theta^T * X \\) 导致了它的导数在每一个维度一定是凹函数
