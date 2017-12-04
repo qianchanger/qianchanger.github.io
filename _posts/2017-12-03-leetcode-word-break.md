@@ -6,9 +6,10 @@ categories: code
 tags: leetcode
 ---
 
-https://leetcode.com/problems/word-break/description/
+https://leetcode.com/problems/word-break/description/   
+https://leetcode.com/problems/word-break-ii/description/   
 
-最直观的思路是
+最直观的思路是   
 
 <!--more-->
 
