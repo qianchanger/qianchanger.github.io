@@ -32,7 +32,6 @@ Predict True时, g(z) >= 0.5, z也>=0; vice versa.
 
 # Gradient Descent
 初始方程和linear regression一致 都是
-# Gradient descent  
 Repeat {  
     \\(\theta_j := \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta)\\)
 }  
