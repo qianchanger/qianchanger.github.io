@@ -1,5 +1,5 @@
 ---
-date: 2017-12-06
+date: 2017-12-07
 layout: post
 title: "[JobHunt]leetcode - Merge/Insert Intervals "
 categories: code
