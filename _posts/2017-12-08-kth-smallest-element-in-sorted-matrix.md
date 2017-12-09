@@ -13,6 +13,8 @@ https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/descriptio
 所以这里推荐一个O(KlgN)的做法   
 堆的插入复杂度是O(lgN) 需要插入K次   
 
+<!--more-->
+
 {% highlight python %}
     def kthSmallest(self, matrix, k):
         """
