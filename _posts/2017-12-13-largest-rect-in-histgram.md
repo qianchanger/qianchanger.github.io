@@ -50,4 +50,4 @@ https://leetcode.com/problems/largest-rectangle-in-histogram/description/
                 width = i if len(l) == 0 else i-l[-1]-1
                 size = max(size, height*width)
         return size
-{% endhighlight %]}
+{% endhighlight %}
