@@ -31,14 +31,29 @@ Predict True时, g(z) >= 0.5, z也>=0; vice versa.
 
 
 # Gradient Descent
-初始方程和linear regression一致 都是
+初始方程和linear regression一致 都是   
 Repeat {  
-    \\(\theta_j := \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta)\\)
+    \\(\theta_j := \theta_j - \alpha\frac{\partial}{\partial\theta_j}J(\theta)\\)   
 }  
 
-因为初始方程一致 所以偏微分之后的方程也一样  
+因为初始方程一致 所以偏微分之后的方程也一样   
 Repeat {  
-    \\(\theta_j := \theta_j - \frac{\alpha}{m}\sum_i=1^m(h_\theta(X^i) - Y^i)X_j^i\\)  
+    \\(\theta_j := \theta_j - \frac{\alpha}{m}\sum_i=1^m(h_\theta(X^i) - Y^i)X_j^i\\)   
 }  
 
 但值得注意的是 由于\\(h_\theta(X)\\)的定义不一样了 所以其实虽然形式上是一样的但内容已经变化了
+
+# Multi-class classfication
+这个问题很好处理 把一个大问题转化为很多个小问题就行了   
+比如\\(Y\in{A, B, C}\\)   
+那么就可以train三个模型 分别预测   
+Y是不是A,   
+Y是不是B,   
+Y是不是C,   
+
+# Solve the problem of overfitting
+如果我们添加很多的多次元 那么很可能model就会被overfit   
+如何来解决这个问题呢   
+一是可以减少feature的数量 可以人工或者用机器来选择feature 但是这代表我们会损失一些信息 这样解决并不是特别完美   
+二是可以引入regularization 就是在cost function中加入\\(\theta^2\\) 这样去惩罚过大的\\(\theta\\) 防止overfitting   
+值得注意的是 我们不惩罚\\(\theta_0\\)   
