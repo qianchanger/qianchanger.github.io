@@ -1,5 +1,5 @@
 ---
-date: 2018-01-08
+date: 2018-01-09
 layout: post
 title: "[JobHunt]leetcode - Lowest Common Ancestor of a Binary Search Tree "
 categories: code
