@@ -49,4 +49,4 @@ youbo安利了一只股票给我们 ST油服
 相恋4年   
 期待那一刻   
 
-![ring](../../assets/photo/IMG_20190406_122447.jpg)
+![ring](../../../assets/photo/IMG_20190406_122447.jpg)   
