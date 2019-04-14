@@ -8,32 +8,32 @@
 ## Base settings ##
 # url:  # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: ''
-title: 随便说哈
+title: 浅唱
 description: > #this means to ignore newlines until "nav_lists:"
-  咪崽的博客
+  浅唱的博客
 
 nav_lists:
   - title: About
     url: /about.html
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: xlagrange.github.io
+repository: qianchanger.github.io
 repository_tree: master
 
 ## Language & timezone ##
 lang: zh #the language of your site
-timezone: America/Toronto
+timezone: Asia/Shanghai
 
 ## Author & social ##
 author:
-  name: 咪崽
-  # email:  #your Email address e.g. someone@site.com
+  name:  浅唱
+  email: qianchanger@gmail.com #your Email address e.g. someone@site.com
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
   # github:  #your GitHub username
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
-  douban: lagrangeisright
+  # douban: lagrangeisright
   # linkedin:  #your Linkedin username
 
 ## Comment system (Disqus) ##
